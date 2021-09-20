@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <style>
+         h1{
+            font-size: 27;
+            
+         }
+         body{
+             background-color: darkblue;
+             color: white;
+             font-size: 27px;
+         }
+    
+     
+
+     </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DO DOM</title>
+</head>
+<body>
+    <h1>UTILIZANDO O DOM EM JAVASCRIPT HTML 5</h1>
+    <p id="aml">Nem sei para que isso serve mais estou mexendo</p>
+    <p>Começando a utilizar codigos dentro da página</p>
+    <script>
+       var p1 = window.document.getElementsByTagName('p')[1]
+       window.document.write("Repetindo o os paragrafos com os elementos das páginas: " + p1.innerText) //Sem a formatação
+       d = window.document.querySelector('p#aml')
+       d.style.color = "#f99273"
+        //https://www.youtube.com/watch?v=WWZX8RWLxIk&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=13
+       //window.document.write("Repetindo o os paragrafos com os elementos das páginas: " + p1.innerHTML //Com a formatação
+       p1.style.color = "#e93a7c"
+    </script>
+</body>
+</html>
